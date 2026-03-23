@@ -5,17 +5,17 @@
 [![Downloads](https://img.shields.io/crates/d/bevy_fast_outline.svg)](https://crates.io/crates/bevy_fast_outline)
 [![Docs](https://docs.rs/bevy_fast_outline/badge.svg)](https://docs.rs/bevy_fast_outline/latest/bevy_fast_outline/)
 
-Simple 2D outline for Bevy focused on performance over features.
+Simple 2D pixel art outline for Bevy focused on performance over features.
 
-:warning: | Currently this does not work at all and the crate is mainly published to reserve the name.
+:warning: | This is not feature complete and currently only supports standard images.
 
 ## Features
 
-- <!-- TODO! -->
+- One pixel wide pixel-perfect outline for images.
 
 ## Limitations
 
-- <!-- TODO! -->
+- Currently this does not support sprites, only standard images.
 
 ## Usage
 
@@ -23,12 +23,18 @@ Take a look at [`/examples`](https://github.com/leomeinel/bevy_fast_outline/tree
 
 ### Examples
 
-<!-- TODO! -->
+#### `mesh_outline.rs`
+
+Scene with a green `Rectangle` as background and an `Outlined2dTexture` with a black outline.
 
 ## Alternatives
 
-<!-- TODO! -->
+- https://github.com/theseatoad/bevy-simple-2d-outline
 
-## Resources
+## Mixed license
 
-<!-- TODO! -->
+This repository is not entirely licensed as Apache-2.0.
+
+| Files              | Author(s)                                             | License                                                                        |
+| ------------------ | ----------------------------------------------------- | ------------------------------------------------------------------------------ |
+| `/assets/images/*` | [Leopold Meinel](https://github.com/leomeinel), Shave | [CC-BY-NC-SA-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode) |

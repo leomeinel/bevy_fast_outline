@@ -7,4 +7,12 @@
  * URL: https://www.apache.org/licenses/LICENSE-2.0
  */
 
-//! Simple 2D outline for Bevy focused on performance over features.
+//! Simple 2D pixel art outline for Bevy focused on performance over features.
+
+mod outline;
+mod plugin;
+
+pub mod prelude {
+    pub use crate::outline::Outlined2dTexture;
+    pub use crate::plugin::FastOutlinePlugin;
+}

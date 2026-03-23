@@ -7,22 +7,23 @@ version = "0.0.1"
 edition = "2024"
 license = "Apache-2.0 OR MIT"
 categories = ["game-engines", "graphics", "rendering"]
-description = "Simple 2D outline for Bevy focused on performance over features."
+description = "Simple 2D pixel art outline for Bevy focused on performance over features."
 authors = ["Leopold Meinel"]
 repository = "https://github.com/leomeinel/bevy_fast_outline"
 readme = "README.md"
 exclude = ["assets/*", "static/*"]
 
 [dependencies]
-bevy = { version = "0.18", default-features = false, features = [
+bevy = { git = "https://github.com/bevyengine/bevy.git", branch = "main", default-features = false, features = [
  "bevy_core_pipeline",
  "bevy_log",
  "bevy_sprite_render",
 ] }
 
 [dev-dependencies]
-bevy = { version = "0.18", default-features = false, features = [
+bevy = { git = "https://github.com/bevyengine/bevy.git", branch = "main", default-features = false, features = [
  "2d",
+ "webp",
  "debug",
 ] }
 
@@ -107,4 +108,3 @@ codegen-units = 4
 
 [profile.ci.package."*"]
 opt-level = 0
-
